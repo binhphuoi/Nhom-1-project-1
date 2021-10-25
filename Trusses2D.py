@@ -134,7 +134,7 @@ for i in range(tn*2):
 forceresult = np.matmul(GSM, dispmat)
 ##print(forceresult)
 print('\n***Positive is Tensile\nNegetive is Compressive***\n')
-print('\n\nDisplacement matrix of nodes (mm)\n')
+print('\nDisplacement matrix of nodes (mm)\n')
 print(dispmat)
 ##print('\n\nForce matrix of nodes\n', forceresult)
 
@@ -184,7 +184,7 @@ elstress = np.zeros((te,1))
 for i in range(te):
     elstress[i,0] = E*elstrain[i,0]
     
-print('\nStress in the elements',elstress)
+print('\nStress in the elements\n',elstress)
 
 ##np.delete(mat, row, 0)
 ##np.delete(mat, col, 1)
